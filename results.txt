@@ -1,0 +1,32 @@
+13:46:46 Iniciando analises
+13:46:46 Importando log
+parsing log, completed traces :: 100%|█████████████████████████████████████| 13087/13087 [00:11<00:00, 1176.78it/s]
+13:47:00 Log importado
+13:47:00 Iniciando Inductive Miner
+13:47:20 Iniciando Woflan
+13:47:20 Visualizando rede de Petri
+13:47:21 Calculando fitness
+13:48:03 Calculando precision
+14:11:48 Calculando generalization
+14:13:07 Calculando simplicity
+xes IM (unsound) F: 1.0000000000  P: 0.1289856183  FS: 0.2284982487  G: 0.9600438140  S: 0.5666666667
+14:13:07 Inductive Miner finalizado
+14:13:07 Iniciando Alpha Miner
+14:13:09 Iniciando Woflan
+14:13:09 Visualizando rede de Petri
+14:13:11 Calculando fitness
+14:13:22 Calculando precision
+14:17:52 Calculando generalization
+14:18:04 Calculando simplicity
+xes alpha (unsound) F: 0.6258365256  P: 0.1078834076  FS: 0.1840412777  G: 0.9735932410  S: 0.9411764706
+14:18:04 Alpha Miner finalizado
+14:18:04 Iniciando Heuristic Miner
+14:18:11 Iniciando Woflan
+14:18:11 Visualizando rede de Petri
+14:18:20 Calculando fitness
+14:19:59 Calculando precision
+14:32:38 Calculando generalization
+14:34:22 Calculando simplicity
+xes HM-0.50 (unsound) F: 0.9821078924  P: 0.3122089027  FS: 0.4737987309  G: 0.9234998800  S: 0.7044025157
+14:34:22 Heuristic Miner finalizado
+14:34:22 Analises finalizadas
