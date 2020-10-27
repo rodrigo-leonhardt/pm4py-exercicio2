@@ -42,7 +42,7 @@ def discover_process_models(log_path, log_name):
     custom_print('Importando log')
 
     log_complete = xes_importer.apply(log_path)    
-    log = variants_filter.filter_log_variants_percentage(log_complete, 0.5)
+    log = variants_filter.filter_log_variants_percentage(log_complete, 0.9)
 
     custom_print('Log importado')
 
