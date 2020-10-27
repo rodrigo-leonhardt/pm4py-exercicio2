@@ -35,7 +35,43 @@ def print_statistics(net):
         o = len(transition.out_arcs)
 
         if (i < 1) or (o < 1) :
-            print(transition.name, i, o)    
+            print(transition.name, i, o)  
+
+
+    sP = ''
+
+    for place in places:
+
+        if (sP != ''):
+            sP = sP +','
+
+        sP = sP + place.name
+
+
+    sT = ''
+
+    for transition in transitions:
+
+        if (sT != ''):
+            sT = sT +','
+
+        sT = sT + transition.name
+
+
+    sF = ''
+
+    for arc in arcs:
+
+        if (sF != ''):
+            sF = sF +','
+
+        sF = sF +'('+ arc.source.name +','+ arc.target.name +')'
+
+
+    print('Definição')  
+    print('P = {'+ sP +'}')
+    print('T = {'+ sT +'}')
+    print('F = {'+ sF +'}')
 
 
 def discover_process_models(log_path, log_name):    
