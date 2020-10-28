@@ -166,7 +166,7 @@ def discover_process_models(log_path, log_name):
     custom_print('Heuristic Miner 0.5 finalizado\n')
 
 
-    #Heuristic Miner 0.5            
+    #Heuristic Miner 0.99            
     custom_print('Iniciando Heuristic Miner 0.99')
     
     parameters = {heuristics_miner.Variants.CLASSIC.value.Parameters.DEPENDENCY_THRESH: 0.99}
@@ -186,6 +186,17 @@ def discover_process_models(log_path, log_name):
     print_statistics(petrinet[0])
     
     custom_print('Heuristic Miner 0.1 finalizado\n')
+
+
+    #Heuristic Miner 1.0            
+    custom_print('Iniciando Heuristic Miner 1.0')
+    
+    parameters = {heuristics_miner.Variants.CLASSIC.value.Parameters.DEPENDENCY_THRESH: 1.0}
+    
+    petrinet = heuristics_miner.apply(log, parameters=parameters)    
+    print_statistics(petrinet[0])
+    
+    custom_print('Heuristic Miner 1.0 finalizado\n')
 
 
 #input: log in XES format
